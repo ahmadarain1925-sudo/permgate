@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PermGate | Zero-Trust Context Firewall for Enterprise LLMs",
+  metadataBase: new URL("https://permgate.ai"),
+  title: "PermGate.ai | Zero-Trust Context Firewall for Enterprise LLMs",
   description:
     "Identity-aware context middleware preventing enterprise data leakage via strict clearance-level document filtering for OpenAI, Anthropic, and RAG.",
   keywords: [
@@ -12,7 +13,15 @@ export const metadata: Metadata = {
     "Zero Trust AI",
     "Okta LLM Middleware",
     "PermGate",
+    "PermGate AI",
   ],
+  openGraph: {
+    title: "PermGate.ai | Zero-Trust Context Firewall for Enterprise LLMs",
+    description: "Eliminate confidential RAG data leaks across departments before context ingestion.",
+    url: "https://permgate.ai",
+    siteName: "PermGate.ai",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
